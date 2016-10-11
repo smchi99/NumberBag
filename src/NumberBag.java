@@ -8,4 +8,11 @@ public class NumberBag {
 		list = new ArrayList<Integer>();
 		maxValue = max;
 	}
+	
+	public boolean add(int n){
+		if(n < 0 || n > maxValue) return false;
+		
+		list.add(n);
+		return true;
+	}
 }
