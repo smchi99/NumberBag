@@ -15,4 +15,11 @@ public class NumberBag {
 		list.add(n);
 		return true;
 	}
+	
+	public int getFreqFor(int n){
+		int nFreq = 0;
+		for(int i = 0; i < list.size(); i++){
+			if(list.get(i) == n) nFreq++;
+		}return n;
+	}
 }
